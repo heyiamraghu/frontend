@@ -12,7 +12,7 @@ function App() {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-            const url: string = "http://localhost:8080/api/v1/blogs";
+            const url: string = "https://king-prawn-app-3jqhv.ondigitalocean.app/api/v1/blogs";
             const response = await fetch(url);
             const json = await response.json();
             console.log(json);
